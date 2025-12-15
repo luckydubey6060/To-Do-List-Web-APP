@@ -1,0 +1,122 @@
+/* ===== BODY ===== */
+body {
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: #1f2937 !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 0 0 15px 15px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar .btn {
+    margin-left: 5px;
+}
+
+/* ===== FORMS ===== */
+form {
+    background: #ffffffaa;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+input.form-control, textarea.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 8px;
+}
+
+/* ===== DASHBOARD TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+table th, table td {
+    text-align: center;
+    padding: 10px;
+}
+
+table th {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+table tr {
+    background: #ffffffcc;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+table tr:hover {
+    transform: scale(1.02);
+}
+
+table td a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 2px;
+    color: #fff;
+}
+
+a[href*="complete"] { background: #4ade80; } /* green */
+a[href*="pending"] { background: #facc15; }  /* yellow */
+a[href*="delete"] { background: #f87171; }   /* red */
+
+/* ===== STATUS LABELS ===== */
+td {
+    font-weight: bold;
+}
+
+td:has(.Completed) {
+    color: #16a34a;
+}
+
+td:has(.Pending) {
+    color: #f59e0b;
+}
+
+/* ===== FLASH MESSAGES ===== */
+.alert {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* ===== HEADINGS ===== */
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* ===== INPUT GROUP BUTTON (Eye icon) ===== */
+.input-group button {
+    border-radius: 0 8px 8px 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    table, form {
+        font-size: 0.9rem;
+    }
+}
